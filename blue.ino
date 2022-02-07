@@ -1,10 +1,8 @@
-// #import <LiquidCrystal.h>
-
-#include <Adafruit_LiquidCrystal.h>
+#include <LiquidCrystal.h>
 #include <string.h>
 
 // LCD Pins
-Adafruit_LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 // Global Var
 #define contra 9
