@@ -25,7 +25,10 @@ void loop()
   {
     Incomming_values = Serial.readString();
     lcd.print(Incomming_values);
-    lcd.print("16x2 LCD Screen");
+
+    lcd.setCursor(0, 1);
+
+    lcd.print("100% accurate");
 
     delay(5000);
     digitalWrite(contra, LOW);
