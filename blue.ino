@@ -3,7 +3,7 @@
 #include <string.h>
 
 // LCD Pins
-
+// Thi is obtained from the Scanner Code
 LiquidCrystal_I2C lcd(0x3F, 20, 4);
 
 String Incomming_values = "";
@@ -12,7 +12,6 @@ void setup()
 {
 
   lcd.init(); // initialize the lcd
-  // Print a message to the LCD.
   lcd.backlight();
   lcd.setCursor(0, 0);
   lcd.print("Mianala");
