@@ -21,13 +21,13 @@ void loop()
 {
   if (Serial.available() > 0)
   {
+    // read the incoming byte:hopefuly this will clear the screen at every new value
+    Incomming_values = Serial.readString();
     lcd.clear();
     lcd.setCursor(0, 0);
-
-    Incomming_values = Serial.readString();
     lcd.print(Incomming_values);
 
     lcd.setCursor(0, 1);
-    // }removed delay, todo: split string and print
+    // removed delay, todo: split string and print
   }
 }
