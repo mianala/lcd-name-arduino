@@ -28,10 +28,6 @@ void loop()
     lcd.print(Incomming_values);
 
     lcd.setCursor(0, 1);
-
-    lcd.print("100% accurate");
-
-    delay(5000);
-    lcd.setCursor(0, 0);
+    // }removed delay, todo: split string and print
   }
 }
